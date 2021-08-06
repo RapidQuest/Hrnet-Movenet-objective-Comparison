@@ -8,3 +8,11 @@ Sample Output:
 ```
    Movenet leads hr_net by 10%
    ```
+Test directory tree should look like this:
+
+   ```
+   /path/to/Test_directory
+   ├── images
+   ├── labels
+  
+   ```
