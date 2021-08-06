@@ -11,7 +11,7 @@ Sample Output:
 Test directory tree should look like this:
 
    ```
-   /path/to/Test_directory
+  Test 
    ├── images
    ├── labels
   
