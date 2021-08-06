@@ -18,7 +18,7 @@ Test directory tree should look like this:
    ```
 Labels should be in json format. Sample below:
 - It should consist 17 coco keypoints.
-- The first item in list should be x numpy co-ordinate and second is y numpy co-ordinate.
+- The first item in list should be x numpy co-ordinate and second; y numpy co-ordinate.
 
   ```
   {'0':[23,44],'1':[34,66].......'16':[98,45]}
