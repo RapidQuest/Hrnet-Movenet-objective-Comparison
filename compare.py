@@ -71,13 +71,12 @@ def main():
   else:
     print("Movenet lags hr_net by {}%".format(abs(relative_difference)*100))
   
+
+
+if __name__ == '__main__':
+    main()
   
   
- 
-
-
-
-
 
 
 
