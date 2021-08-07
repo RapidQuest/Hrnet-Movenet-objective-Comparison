@@ -51,3 +51,5 @@ Labels should be in json format. Sample below:
    processed_coordinates *= pred_mask
    return processed_coordinates
   ```
+- [evaluate.py](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch/lib/core/evaluate.py) to calculate accuracy of both models
+ 
