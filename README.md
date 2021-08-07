@@ -6,7 +6,7 @@ To get the objective comparison run:
    ```
 Sample Output:
 ```
-   Movenet leads hr_net by 10%
+   Movenet lags hr_net by 10%
    ```
 Test directory tree should look like this:
 
