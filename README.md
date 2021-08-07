@@ -55,5 +55,5 @@ Labels should be in json format. Sample below:
   ```
   Modifications:
   1. Added utilities to enable movenet evaluation.
-  2. replaced get_max_predictions() function with get_final_predictions() for hrnet evaluation to obtain coordinates w.r.t orignal image   resolution. The former method obtained x,y coordinates limited to heatmap range only. For real time evaluation this may not be important. So latter method seems to be useful.
+  2. replaced get_max_predictions() function with get_final_predictions() for hrnet evaluation to obtain coordinates w.r.t orignal image  resolution. The former method obtained x,y coordinates limited to heatmap range only. For real time evaluation this may not be important. So latter method seems to be useful.
   ```
