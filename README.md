@@ -29,6 +29,8 @@ Labels should be in json format. Sample below:
 - By default it compares hrnet w32 with heatmap size [64,64] trained on coco dataset with movenet lightning. 
 ## Scripts used from [official hrnet repository](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch):
 - [pose_hrnet.py](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch/lib/models/pose_hrnet.py) to build hrnet model.
-### changes applied to [pose_hrnet.py](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch/lib/models/pose_hrnet.py):
-- Applied sigmoid function to output of hrnet model to make use of keypoint threshold.
+  ```
+  Modifications:
+  Applied sigmoid function to output of hrnet model to make use of keypoint threshold.
+ ```
 - 
