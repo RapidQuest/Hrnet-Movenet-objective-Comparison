@@ -25,3 +25,6 @@ Labels should be in json format. Sample below:
    ```
 ## Metrics used for comparison:
 - percentage ratio of normalised euclidean distance across all keypoints and samples with a distance threshold(default = 0.5).
+## Model :
+- By default it compares hrnet w32 with heatmap size [64,64] trained on coco dataset with movenet lightning. 
+## Scripts used from [official hrnet official repository](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch)
