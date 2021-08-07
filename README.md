@@ -38,5 +38,16 @@ Labels should be in json format. Sample below:
   ```
   Modifications:
   Implemented below function to process movenet output :
-  
+  ```
+  ```python
+  def get_processed_predictions(output,keypoint_thr,frame_batch):
+   batch_size = output.shape[0]
+   num_of_keypoints = output.shape[2]
+   output[:,:,:,[0,1]] = output[:,:,:,[1,0]]
+   processed_coordinates = output[:,0,:,:2]*np.tile(frame_batch.reshape((frame_batch.shape[0],1,frame_batch.shape[1])),(1,17,1))
+   max_vals = output[:,0,:,2].reshape((batch_size,num_of_keypoints,1))
+   pred_mask = np.tile(np.greater(maxvals, keypoint_thr), (1, 1, 2))
+   pred_mask = pred_mask.astype(np.float32)
+   processed_coordinates *= pred_mask
+   return processed_coordinates
   ```
