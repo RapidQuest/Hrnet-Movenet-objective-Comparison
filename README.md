@@ -34,3 +34,4 @@ Labels should be in json format. Sample below:
   Applied sigmoid function to output of hrnet model to make use of keypoint threshold.
   ```
 - [transforms.py](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch/lib/utils/transforms.py) to perform affine transformations.
+- [inference.py](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch/lib/core/inference.py) to derive x,y coordinatesv w.r.t to original resolution of detected keypoints above threshold.
