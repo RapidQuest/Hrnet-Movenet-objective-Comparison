@@ -33,7 +33,7 @@ POSE_HIGH_RESOLUTION_NET.STAGE4.FUSE_METHOD = 'SUM'
 
 _C = CN()
 
-
+_C.GPUS = (0,)
 
 # Cudnn related params
 _C.CUDNN = CN()
