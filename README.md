@@ -23,4 +23,5 @@ Labels should be in json format. Sample below:
   ```
   {'0':[23,44],'1':[34,66].......'16':[98,45]}
    ```
-## More Details & Scripts to be added....
+## Metrics used for comparison:
+- percentage ratio of normalised euclidean distance across all keypoints and samples with a distance threshold(default = 0.5).
