@@ -2,6 +2,7 @@ import torch
 import tensorflow as tf
 import Loader
 from config import _C as cfg
+from evaluate import *
 
 COCO_INSTANCE_CATEGORY_NAMES = [
     '__background__', 'person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus',
