@@ -36,7 +36,7 @@ def main():
   
   #Instantiate hrnet model
   CTX = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
-  hrnet_model = eval('models.'+cfg.MODEL.NAME+'.get_pose_net')(cfg, is_train=False)
+  hrnet_model = eval(cfg.MODEL.NAME+'.get_pose_net')(cfg, is_train=False)
   hrnet_model.load_state_dict(torch.load(cfg.TEST.MODEL_FILE), strict=False) #If you are using cpu set device='cpu' in torch.load #gpu advisable
   hrnet_model = torch.nn.DataParallel(pose_model, device_ids=cfg.GPUS)
   hrnet_model.to(CTX)
