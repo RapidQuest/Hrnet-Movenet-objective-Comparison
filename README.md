@@ -35,3 +35,8 @@ Labels should be in json format. Sample below:
   ```
 - [transforms.py](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch/lib/utils/transforms.py) to perform affine transformations.
 - [inference.py](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch/lib/core/inference.py) to derive x,y coordinatesv w.r.t to original resolution of detected keypoints above threshold.
+  ```
+  Modifications:
+  Implemented below function to process movenet output :
+  
+  ```
