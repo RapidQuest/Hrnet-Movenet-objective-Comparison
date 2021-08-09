@@ -38,7 +38,7 @@ def accuracy(output, target, thr=0.5,keypoint_thr = 0.5,model_type = 'movenet',f
       norm = np.ones((pred.shape[0], 2)) * frame_batch / 10
     else:
         idx = list(range(output.shape[1]))
-        pred, _ = get_final_preds(config,output,hrnet_post_process_attributes['center'],hrnet_post_process_attributes['scale'])
+        pred, _ = get_final_preds(config,output,hrnet_post_process_attributes['center'],hrnet_post_process_attributes['scale'],keypoint_thr)
         h = output.shape[2]
         w = output.shape[3]
         norm = np.ones((pred.shape[0], 2)) * np.array([w, h]) / 10
